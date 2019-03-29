@@ -1,0 +1,16 @@
+Algoritmo Identifircar_numero_mayor
+	contador <- 0;
+	escribir " introdusca cantidad de numeros deseados ";
+	leer n;
+	max <-0
+	mientras (contador <= n-1) hacer 
+		contador <- contador+1;
+		escribir "ingrese numero";
+		Leer num;
+		si (num > max)
+			entonces 
+			max <- num
+		FinSi
+	FinMientras
+	escribir " el numero mayor es : ", max;
+FinAlgoritmo

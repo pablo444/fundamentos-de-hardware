@@ -1,0 +1,71 @@
+Proceso ciclo
+	contador <- 0 ;
+	Escribir "ingrese cantidad de empleados";
+    leer n 
+	mientras ( contador <=n) Hacer
+		contador <- contador + 1;
+		Escribir 'ingrese grado del trabajador en la empresa';
+		Leer grado;
+		Si (grado=1) Entonces sb <- 450000;
+		SiNo
+			Si (grado=2) Entonces sb <- 550000;
+			SiNo
+				Si (grado=3) Entonces sb <- 700000;
+				FinSi
+			FinSi
+		FinSi
+		Escribir " ingrese ISAPRE del trabajador segun el numero que correrponda";
+		escribir "1)colmena";
+		Escribir "2)ban sander";
+		escribir "3)vida 3";
+		escribir "4)fonasa";
+		Leer isapre;
+		Si (isapre=1) Entonces isa <- 6.5;
+		SiNo
+			Si (isapre=2) Entonces isa <- 7.3;
+			SiNo 
+				Si (isapre=3) Entonces isa <- 7;
+				SiNo
+					Si (isapre=4) Entonces isa <- 7;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		Escribir 'ingrese AFP del trabajador segun el numero que corresponda';
+		escribir "1)ban sander";
+		escribir "2)geometrica";
+		escribir "3)cumprum";
+		escribir "4)provida";
+		Leer afp;
+		Si (afp = 1) Entonces af <- 12;
+		SiNo
+			Si (afp = 2) Entonces af <- 12.4 ;
+			SiNo
+				Si (afp = 3) Entonces af <- 12.4;
+				SiNo
+					Si (afp = 4) Entonces af <- 12.9;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		Escribir ' ingrese horas trabajedas';
+		Leer he;
+		Si (he>40 Y he<=43) Entonces ex <- (he-40)*2000;
+		SiNo
+			Si (he>43 Y he<=47) Entonces ex <- ((he-43)*3000)+6000;
+			SiNo
+				Si (he>47) Entonces ex <- ((he-47)*3500)+12000+6000;
+				SiNo
+					Si (he=40) Entonces ex <- 0;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		s <- af+isa;
+		r <- ex+sb;
+		r2 <- r/100;
+		s2 <- 100-s;
+		sf <- r2*s2;
+		Escribir "sueldo liquido del mes: " ,sf
+	finmientras;
+FinAlgoritmo
