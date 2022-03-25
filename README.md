@@ -1,1 +1,1 @@
-# fundamentos-de-hardware
+# fundamentos-de-hardware y mis projectos
